@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Webmail Application</title>
+</head>
+<body>
+<h1>Simple Webmail Application </h1>
+<form action="http://www.stanford.edu/group/csp-courses/cgi-bin/webmail.php" 
+method="post">
+ <fieldset>
+ <legend>Sender Information</legend>
+ <p>
+ <label for="SenderName">Your Name:</label>
+ <input type="text" name="SenderName" id="SenderName">
+ </p>
+ <p>
+ <label for="SenderEmail">Your Email: </label>
+ <input type="email" name="SenderEmail" id="SenderEmail">
+ </p>
+ </fieldset>
+ <hr>
+ <fieldset>
+ <legend>Recipient Information</legend>
+ <p>
+ <label for="RecipientName"> Recipient Name: </label>
+ <input type="text" name="RecipientName" id="RecipientName">
+ </p>
+ <p>
+ <label for="RecipientEmail"> Recipient Email: </label>
+ <input type="email" name="RecipientEmail" id="RecipientEmail">
+ </p>
+ </fieldset>
+ <hr>
+ <p>
+ <label for="Subject"> Subject: </label>
+ <input type="text" name="Subject" id="Subject">
+ </p>
+ <hr>
+ <p>
+<label for="Message"> Email Message:<br>
+ </label>
+ <textarea name="Message" id="Message" cols="100" rows="4"></textarea>
+ </p>
+ <hr>
+ <p>
+ <input type="submit" name="submit" value="Send Email" />
+ <input type="reset" name="reset" value="Reset and Start Again" />
+ </p>
+</form>
+</body>
+</html>
